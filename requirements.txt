@@ -18,6 +18,7 @@ python-dotenv>=1.0.0
 chromadb>=0.4.0
 sentence-transformers>=2.2.0
 streamlit>=1.28.0
+streamlit-clickable-images
 requests>=2.31.0
 
 torch
