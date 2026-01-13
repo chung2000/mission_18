@@ -1,0 +1,98 @@
+[
+    {
+        "id": 1,
+        "title": "미행 (Following)",
+        "director": "크리스토퍼 놀란",
+        "genre": "범죄/스릴러",
+        "release_date": "1998-09-12",
+        "poster_url": "https://i.namu.wiki/i/OOkacDLNrSOr7Vi-E8slPndcVdFG6CSZ-0ZPvaWyekwqizrN5CQ00sOaQUK8bS9PJQRp8QsOKUX3Rx-Cj3_ZvaKNc4arnXrRwwh307VMtGCGgvVqXHYIeLI6lkUHDvJPAeLQWvlzbp6srrih8VHOaQ.webp"
+    },
+    {
+        "id": 2,
+        "title": "메멘토 (Memento)",
+        "director": "크리스토퍼 놀란",
+        "genre": "미스터리/스릴러",
+        "release_date": "2001-08-25",
+        "poster_url": "https://i.namu.wiki/i/BpvuEFq9aZ6G-5BaEU26aSJBCVqOlvGmWfbW-MzYAWOflIqebe3bJxAKdhXB4HbZ0RYTDimCiuXFghgCOvlVmCcZilZMXCKvR_yRrd7i4YD7oEdK7HRMLiLyT-zm10s3zAUrUqXAxU168lwQbO2Ipg.webp"
+    },
+    {
+        "id": 3,
+        "title": "인섬니아 (Insomnia)",
+        "director": "크리스토퍼 놀란",
+        "genre": "범죄/스릴러",
+        "release_date": "2002-08-15",
+        "poster_url": "https://i.namu.wiki/i/WkQxt7Opt-frv6nJDwSxLiy6ZrzsQGUXSSKBA60s3CQREvFfSo8-a4ov_izKDu7GuzqKkiqlt3uroG3MHECN9nSHJ79BdIhJSmhGrKI4Td2regH5IpBa4mhzVqaXx3CHW4h5OnvKw0uEMp8HArsjQw.webp"
+    },
+    {
+        "id": 4,
+        "title": "배트맨 비긴즈 (Batman Begins)",
+        "director": "크리스토퍼 놀란",
+        "genre": "액션/판타지",
+        "release_date": "2005-06-24",
+        "poster_url": "https://i.namu.wiki/i/CAlDgBVlnUrDDH0-tglORN1JG8DqW1bJVy5tWKqFnsywJ2pOIGKPaR7S_mte9YkZ2wBbQU8PLLkBonfuZdHKNLzUuEEdLbjm9jFPtTXX0feq_VOqXLYJ4v1SLsCUmtb5WAWSrvAZm75w6XPQuzsMAA.webp"
+    },
+    {
+        "id": 5,
+        "title": "프레스티지 (The Prestige)",
+        "director": "크리스토퍼 놀란",
+        "genre": "스릴러/드라마",
+        "release_date": "2006-11-02",
+        "poster_url": "https://i.namu.wiki/i/2HkK-zDyfv5Slkz8-XDe--H61eCxQvWyjJF0NLpYdU4o3cBnbldW8gCM4c31xHwisCtc3p0v7zeaeHmruvnnsXOliGMS7OQ6vfsfwyKAgfZ8iF4VdelPy8jCa2c2iFN7Brj4BgmpO7STmdlNkgQBww.webp"
+    },
+    {
+        "id": 6,
+        "title": "다크 나이트 (The Dark Knight)",
+        "director": "크리스토퍼 놀란",
+        "genre": "액션/범죄",
+        "release_date": "2008-08-06",
+        "poster_url": "https://i.namu.wiki/i/qneGO98M3R-DDz9cbHU_tzvbc7dRkrmcW4_DCU4h5RTzZD85gMWwsLoeghDFYMekzxwpfuRoYwvNLQUbv0W1rjP3OpJk-peXSINi1livCgXXiR_NYfcSKlatAvKXrZrtX-Vkn6HZfxWgV86ZH9x_RA.webp"
+    },
+    {
+        "id": 7,
+        "title": "인셉션 (Inception)",
+        "director": "크리스토퍼 놀란",
+        "genre": "SF/액션",
+        "release_date": "2010-07-21",
+        "poster_url": "https://i.namu.wiki/i/BK9WxDzUnNRy-yvWHcrCOdRKeRzFUf8y1vOZ4HibAD3L9xCsqw3IYCzajm2Cb2H2bJKArPV92QcwbU1mAYAjtHRvMgvEn5qZzXkvCEkz9u6EwaHX-w4mlQn9RpDXTKgF49581n-ujISrnD_GwoFiVg.webp"
+    },
+    {
+        "id": 8,
+        "title": "다크 나이트 라이즈 (The Dark Knight Rises)",
+        "director": "크리스토퍼 놀란",
+        "genre": "액션/범죄",
+        "release_date": "2012-07-19",
+        "poster_url": "https://i.namu.wiki/i/K2ldo-KX1cS5G-vDgIdAxkZisB0gPLkd6gPz0GJZF31V7p0jdUTi56BeDBUaXzNGzGMiCtLaVRqcT_ygokd1ok0JueNtAxX27ZPHsELKnR5Js5rDlgFz2y8NLAzf2kZOhxdRtOcORQe_rW614vIviA.webp"
+    },
+    {
+        "id": 9,
+        "title": "인터스텔라 (Interstellar)",
+        "director": "크리스토퍼 놀란",
+        "genre": "SF/드라마",
+        "release_date": "2014-11-06",
+        "poster_url": "https://i.namu.wiki/i/DcL_aTQHHQYtZFpWjN8ZIY3hLg-lDr_FP35UxZuCCNJJqXCrgpmmQtVz1gpnpJ1-LHRtMcAb1PWCMIH9fuLU5myLQP52y2_3l0GCCaUJZIZhWx7dVx6SXh881OaOOhngIqtSbggVincynxOc73Tqug.webp"
+    },
+    {
+        "id": 10,
+        "title": "덩케르크 (Dunkirk)",
+        "director": "크리스토퍼 놀란",
+        "genre": "전쟁/드라마",
+        "release_date": "2017-07-20",
+        "poster_url": "https://i.namu.wiki/i/VWt7NmCl270MWIuBnw1jj9rE5i4f055WbUQXRb2LDusRuFszfxBFl35bK7LzgeyjQ2_srrNsyn8eO7OumXUvjyY9yXqZ4LpnJBmEoB7fmgiLB0NnWmd3zZhNoTeOCKur-LnEc-K3y_FWw9SkGWgMfA.webp"
+    },
+    {
+        "id": 11,
+        "title": "테넷 (Tenet)",
+        "director": "크리스토퍼 놀란",
+        "genre": "액션/SF",
+        "release_date": "2020-08-26",
+        "poster_url": "https://i.namu.wiki/i/TZiCRt9iJqZ9at7O-xfmYIgWjl5dwnKXaPwP_eyt8azFscinioanjOOTFUafG85U2abh1o74_rZ3z6gf6ECP6nc3apyWAFYc941Ze5VHXeVxhw-vGWYfth_a5ct-h7QDN1G3-CFUb87uBo1rWM8diw.webp"
+    },
+    {
+        "id": 12,
+        "title": "오펜하이머 (Oppenheimer)",
+        "director": "크리스토퍼 놀란",
+        "genre": "드라마/스릴러",
+        "release_date": "2023-08-15",
+        "poster_url": "https://i.namu.wiki/i/k7cIMS1lfBZrLB-Z7kcL7PoFVARG3IwwAC9mC0dFcpqtMFaCwB-fBmrWA8w4JKSVEiasbM_GkKpYWiT3oxjZ5868jSOFQ7LifaZqbRr-L6LyXE9oypFIVSvA395tvnYU-Osw2ywjGdIqHlPoMUUn-g.webp"
+    }
+]

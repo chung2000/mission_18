@@ -1,0 +1,14 @@
+# Cache, etc
+__pycache__/
+*.ipynb_checkpoints/
+
+# IDE
+.idea/
+.vscode/
+.DS_Store
+
+# System
+.env
+
+# 가상환경 폴더
+.venv/
