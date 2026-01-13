@@ -50,9 +50,9 @@ with tabs[0]:
         if not movies:
             st.info("등록된 영화가 없습니다.")
         else:
-            cols = st.columns(3)
+            cols = st.columns(4)
             for idx, movie in enumerate(movies):
-                with cols[idx % 3]:
+                with cols[idx % 4]:
                     ##st.image(movie['poster_url'], use_container_width=True)
                     st.image(movie['poster_url'], width=200)
                     ##st.bold(movie['title'])
