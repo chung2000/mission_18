@@ -1,5 +1,4 @@
 # 🎬 [Mission 18] AI 기반 영화 리뷰 감성 분석 서비스 구축
-웹 애플리케이션 : 프론트엔드는 Streamlit, 백엔드는 FastAPI
 
 ---
 
