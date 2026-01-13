@@ -11,21 +11,35 @@ app = FastAPI(title="Movie Review AI API")
 
 # --- 1. 파일 경로 설정 ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MOVIES_FILE = os.path.join(BASE_DIR, "data", "movies.json")
+DATA_DIR = os.path.join(BASE_DIR, "data")
+MOVIES_FILE = os.path.join(DATA_DIR, "movies.json")
+REVIEWS_FILE = os.path.join(DATA_DIR, "reviews.json")
 
-# --- 2. 데이터 로드 함수 ---
-def load_movies():
-    if os.path.exists(MOVIES_FILE):
-        with open(MOVIES_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
+# data 폴더가 없으면 생성
+if not os.path.exists(DATA_DIR):
+    os.makedirs(DATA_DIR)
+
+
+# --- 2. 데이터 로드 및 저장 유틸리티 ---
+def load_json(file_path):
+    if os.path.exists(file_path):
+        with open(file_path, "r", encoding="utf-8") as f:
+            try:
+                return json.load(f)
+            except json.JSONDecodeError:
+                return []
     return []
 
 
+def save_json(file_path, data):
+    with open(file_path, "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=4)
 
-# --- 2. 임시 데이터 저장소 (DB 대신 리스트 사용) ---
-# 초기 로드
-movies = load_movies()
-reviews = []
+
+# --- 3. 초기 데이터 로드 ---
+print("Initializing Data...")
+movies = load_json(MOVIES_FILE)
+reviews = load_json(REVIEWS_FILE)
 
 # 다음 ID 설정을 위해 현재 영화 중 가장 높은 ID + 1 계산
 movie_id_counter = max([m["id"] for m in movies], default=0) + 1
@@ -38,8 +52,10 @@ classifier = pipeline(
     model="monologg/koelectra-small-v3-discriminator"
 )
 print("Model Loaded Successfully!")
+print("Server Ready!")
 
-# --- 3. 데이터 모델(Pydantic) 정의 ---
+
+# --- 5. 데이터 모델(Pydantic) ---
 class MovieCreate(BaseModel):
     title: str
     director: str
@@ -53,7 +69,7 @@ class ReviewCreate(BaseModel):
     content: str
 
 
-# --- 4. API 엔드포인트 구현 ---
+# --- 6. API 엔드포인트 구현 ---
 
 # [영화 관련 API]
 @app.get("/movies/")
@@ -67,15 +83,34 @@ def create_movie(movie: MovieCreate):
     new_movie = movie.dict()
     new_movie["id"] = movie_id_counter
     movies.append(new_movie)
+
+    # 영화 추가 시 파일에 저장(백업)
+    save_json(MOVIES_FILE, movies)
+
     movie_id_counter += 1
     return new_movie
 
 
+# ... (상단 import 및 load_json, save_json 유틸리티는 동일)
+
+# [영화 삭제 API]
 @app.delete("/movies/{movie_id}")
 def delete_movie(movie_id: int):
-    global movies
+    global movies, reviews
+    # 1. 영화 존재 여부 확인
+    movie_exists = any(m["id"] == movie_id for m in movies)
+    if not movie_exists:
+        raise HTTPException(status_code=404, detail="Movie not found")
+
+    # 2. 영화 삭제 및 데이터 갱신
     movies = [m for m in movies if m["id"] != movie_id]
-    return {"message": "Movie deleted"}
+    save_json(MOVIES_FILE, movies)
+
+    # 3. (옵션) 삭제된 영화에 달린 리뷰도 함께 삭제 (Cascade Delete)
+    reviews = [r for r in reviews if r["movie_id"] != movie_id]
+    save_json(REVIEWS_FILE, reviews)
+
+    return {"message": f"Movie {movie_id} and its reviews have been deleted."}
 
 
 # [리뷰 및 감성 분석 API]
@@ -100,7 +135,11 @@ def create_review(review: ReviewCreate):
         "sentiment_score": round(prediction['score'], 4),
         "created_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     }
+
+    # 메모리에 추가 후 파일에 즉시 백업
     reviews.append(new_review)
+    save_json(REVIEWS_FILE, reviews)
+
     return new_review
 
 
@@ -108,6 +147,27 @@ def create_review(review: ReviewCreate):
 def get_recent_reviews():
     # 최신순으로 10개 반환
     return reviews[::-1][:10]
+
+# (기타 삭제 등의 API도 동일하게 save_json을 호출하도록 구성)
+# [리뷰 삭제 API]
+@app.delete("/reviews/")
+def delete_all_reviews():
+    global reviews
+    reviews = []
+    save_json(REVIEWS_FILE, reviews)
+    return {"message": "All reviews have been deleted."}
+
+
+# [리뷰 개별 삭제 API]
+@app.delete("/reviews/{index}")
+def delete_specific_review(index: int):
+    global reviews
+    try:
+        reviews.pop(index)
+        save_json(REVIEWS_FILE, reviews)
+        return {"message": "Review deleted"}
+    except IndexError:
+        raise HTTPException(status_code=404, detail="Review index out of range")
 
 
 if __name__ == "__main__":
