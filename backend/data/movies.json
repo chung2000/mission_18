@@ -95,19 +95,124 @@
         "release_date": "2023-08-15",
         "poster_url": "https://i.namu.wiki/i/k7cIMS1lfBZrLB-Z7kcL7PoFVARG3IwwAC9mC0dFcpqtMFaCwB-fBmrWA8w4JKSVEiasbM_GkKpYWiT3oxjZ5868jSOFQ7LifaZqbRr-L6LyXE9oypFIVSvA395tvnYU-Osw2ywjGdIqHlPoMUUn-g.webp"
     },
-
-    { "id": 13, "title": "에이리언 (Alien)", "director": "리들리 스콧", "genre": "SF/공포", "release_date": "1979-10-01", "poster_url": "https://i.namu.wiki/i/zxDxOZR75VLqHuYHd_49-VDsBJDSL483YNDQW5ND3slmo___p48Yj-8hl8hfGA8X9xN10jC0yO_Fy-Ojo5nmLlOIfbnJj3FzuL2t8hFe_kVEDcGwRik8U0uD_JL0t5SqtN8RWDPr0op9YvvSWeVRIQ.webp" },
-    { "id": 14, "title": "블레이드 러너 (Blade Runner)", "director": "리들리 스콧", "genre": "SF/스릴러", "release_date": "1982-06-25", "poster_url": "https://i.namu.wiki/i/oeXIyIy4-SA8R2vktxhBNX25sTqCXP7dtzfwrvEVT32Z9OhBRJwBpknEToLZOHHX3BBz4K-aAtnK-RbSP83-wocHXcOqqY3AtGJdPj2B_StXE5IjXrNJSdonjWy5T0m-ON6zQLR-DhEeb_cKXiETRw.webp" },
-    { "id": 15, "title": "터미네이터 (The Terminator)", "director": "제임스 카메론", "genre": "SF/액션", "release_date": "1984-12-22", "poster_url": "https://i.namu.wiki/i/HzjOre7QF5WV19Ko6jEHPcE3SmIpE-7stFudPwbTy4HadmU5Ta2gGGDt29TptjzrlLvMYMRjkZjsaEWigZzW_1RnbyVDLOM-cRqNjGf-ep66ovVIIqhcA9F_DQam0pASeHwMSaueD3RY-IEYnSuoGQ.webp" },
-    { "id": 16, "title": "에이리언 2 (Aliens)", "director": "제임스 카메론", "genre": "SF/공포/액션", "release_date": "1986-12-24", "poster_url": "https://i.namu.wiki/i/aHW_yzNvVLLIv-BXiuy23Pa5LKZ5g0sty1buziyd0zJxE3UgAvoo79MFFaNpX24hDe-bzNdr1o-HIew3u1Lzd8NH_tnUR7Z3cvQorD8a7yOvYelTENoFwQbYgC0pxgu60IkTdeYCZEJpS_o6zmkTPw.webp" },
-    { "id": 17, "title": "터미네이터 2 (Terminator 2)", "director": "제임스 카메론", "genre": "SF/액션", "release_date": "1991-07-06", "poster_url": "https://i.namu.wiki/i/dlJo2u9MCkUDtZqB2g0cbOz2QrohvV8v-r6d_IsNltd4SyNJ_SFPSE3MpwYf12omz_f1QNqa_IcQmoNYD3LStkbF0-iYekdK_f4jitqP5M6nSy1Wztc_Z4cl4DQ2AURr6f8Os-ATkx3q043IMXuQ5Q.webp" },
-    { "id": 18, "title": "트루 라이즈 (True Lies)", "director": "제임스 카메론", "genre": "액션/코미디", "release_date": "1994-08-13", "poster_url": "https://i.namu.wiki/i/U9Lwe1I68pqymmEqPpEbBPoKcuIfXSbeFqYvRq_mv6vnNoJKqEbULKss1TyR3pPkyb0rPDpkJS6N1ICzZbfScnxdk4aksG3qHieiccZqiMQWq0kPpitmIfBZNOJaPOgJh5-NUh7QIyZx6G9gtrEsPQ.webp" },
-    { "id": 19, "title": "타이타닉 (Titanic)", "director": "제임스 카메론", "genre": "로맨스/드라마", "release_date": "1998-02-20", "poster_url": "https://i.namu.wiki/i/0m20IinZ46smWKKFpbLHp_YgraALRbpgLWOVVR3eXppBN6KzEUd0qqiEORA9SztBK5oAjpMwQgoHU1X4Vx5r4ktxWhQeMc-c-CPTZR4Lt8GSeHVJ53M1blu6VuhEeIkPKl4jqafpeopevZbV6x9LoQ.webp" },
-    { "id": 20, "title": "글래디에이터 (Gladiator)", "director": "리들리 스콧", "genre": "액션/드라마", "release_date": "2000-05-14", "poster_url": "https://i.namu.wiki/i/NfMIAyWpum09xwA2b3Dom5h9xdfUyDSLceReiML3deWkQzjszAP1cBbtR6isDNet2DRdsy0qXhRFenNSP6rOkpHGaOsOMSzg4OM1m78t63F_iAjfNKvxA2kujd30BLVBN1bjoHVdNhBVpH8kMIUpVg.webp" },
-    { "id": 21, "title": "아바타 (Avatar)", "director": "제임스 카메론", "genre": "SF/어드벤처", "release_date": "2009-12-17", "poster_url": "https://i.namu.wiki/i/S8leCXbH-7K5tBRloeU5CMwpkOgoKZaIyMLxPG0KJve9lsBsRajwxwWu5jujZeyw2SVmMwfpfad6E4atSvJuLUAtipC1woIIh6gnoMcDt3C3pxyqGNtkTj0whSBjkBnXoQzi1p-ufOGNmLzP9IKO2Q.webp" },
-    { "id": 22, "title": "마션 (The Martian)", "director": "리들리 스콧", "genre": "SF/드라마", "release_date": "2015-10-08", "poster_url": "https://i.namu.wiki/i/iNpSLNQYv2fG17eKaArSmay7FuFvsVPgwa9N_u1XOjusCQblFTv2gM2jkbqFXeDPDgA1pZV3N0ysc9SDPuMMWiao80Z-G-YW7B_QVbNhH7yeUz1mptYd5DX77ggNqNtbgLa_b9lMv7WzDkkTBgH1FA.webp" },
-    { "id": 23, "title": "아바타: 물의 길 (Avatar 2)", "director": "제임스 카메론", "genre": "SF/어드벤처", "release_date": "2022-12-14", "poster_url": "https://i.namu.wiki/i/1IVlETEzLEpvkwIQOV2C1398a03vneKQAEJM9dNPlKmadh6afFh5lbFbN_C7_w5TVZIKocaPS2p1rnAQmWO9zxLuQ0OYbuLHhlomlcTRWAOyukodoGCCi2UUeGaEl5xzokMtH7mTsTe8WZSUn3renw.webp" },
-    { "id": 24, "title": "나폴레옹 (Napoleon)", "director": "리들리 스콧", "genre": "전쟁/드라마", "release_date": "2023-12-06", "poster_url": "https://i.namu.wiki/i/fFMAL4gtyR26lYItDOvuRPUYqbaAn6mHyg8XTL9DkToUS7u7TC1briCgwYN09rFrv5UW1XMoZuFCC1SQ1r7_1uHSBF_4qg55QcxAaxXYG6vahVzJGejYY5cScTTiV_PnV75qSWtxYbgC7mNioOWvrw.webp" },
-    { "id": 25, "title": "글래디에이터 II (Gladiator 2)", "director": "리들리 스콧", "genre": "액션/드라마", "release_date": "2024-11-13", "poster_url": "https://i.namu.wiki/i/wSETKp88-IkPRaCc_6rYh_OS5WO7h0FIDr0b9XeZSVWNASme-foq_lpkA4mH_qZWNq6v6vr4N_bRi2tAklQhDaiglrQAqStaGAItLn2juZmOhC2Rv7En53OqsGWgTdduHLWn-Y-yr2v4yWf_sSjkTw.webp" },
-    { "id": 26, "title": "아바타: 불과 재 (Avatar 3)", "director": "제임스 카메론", "genre": "SF/어드벤처", "release_date": "2025-12-19", "poster_url": "https://i.namu.wiki/i/DMmiKP9klGB1d-a2cUDBhw-M3VRsvTtgfkkR-RUsl0QiDIpXBOOpPW-ExwcKrGD_snOBix4IKggWZkwAs_VuBs-Afv7MiaBtMNC9zKTYPjvtDEt4dxDYJnEgHkvFABYflJ78J_dR0PUawVjkqxwEtA.webp" }
+    {
+        "id": 13,
+        "title": "에이리언 (Alien)",
+        "director": "리들리 스콧",
+        "genre": "SF/공포",
+        "release_date": "1979-10-01",
+        "poster_url": "https://i.namu.wiki/i/zxDxOZR75VLqHuYHd_49-VDsBJDSL483YNDQW5ND3slmo___p48Yj-8hl8hfGA8X9xN10jC0yO_Fy-Ojo5nmLlOIfbnJj3FzuL2t8hFe_kVEDcGwRik8U0uD_JL0t5SqtN8RWDPr0op9YvvSWeVRIQ.webp"
+    },
+    {
+        "id": 14,
+        "title": "블레이드 러너 (Blade Runner)",
+        "director": "리들리 스콧",
+        "genre": "SF/스릴러",
+        "release_date": "1982-06-25",
+        "poster_url": "https://i.namu.wiki/i/oeXIyIy4-SA8R2vktxhBNX25sTqCXP7dtzfwrvEVT32Z9OhBRJwBpknEToLZOHHX3BBz4K-aAtnK-RbSP83-wocHXcOqqY3AtGJdPj2B_StXE5IjXrNJSdonjWy5T0m-ON6zQLR-DhEeb_cKXiETRw.webp"
+    },
+    {
+        "id": 15,
+        "title": "터미네이터 (The Terminator)",
+        "director": "제임스 카메론",
+        "genre": "SF/액션",
+        "release_date": "1984-12-22",
+        "poster_url": "https://i.namu.wiki/i/HzjOre7QF5WV19Ko6jEHPcE3SmIpE-7stFudPwbTy4HadmU5Ta2gGGDt29TptjzrlLvMYMRjkZjsaEWigZzW_1RnbyVDLOM-cRqNjGf-ep66ovVIIqhcA9F_DQam0pASeHwMSaueD3RY-IEYnSuoGQ.webp"
+    },
+    {
+        "id": 16,
+        "title": "에이리언 2 (Aliens)",
+        "director": "제임스 카메론",
+        "genre": "SF/공포/액션",
+        "release_date": "1986-12-24",
+        "poster_url": "https://i.namu.wiki/i/aHW_yzNvVLLIv-BXiuy23Pa5LKZ5g0sty1buziyd0zJxE3UgAvoo79MFFaNpX24hDe-bzNdr1o-HIew3u1Lzd8NH_tnUR7Z3cvQorD8a7yOvYelTENoFwQbYgC0pxgu60IkTdeYCZEJpS_o6zmkTPw.webp"
+    },
+    {
+        "id": 17,
+        "title": "터미네이터 2 (Terminator 2)",
+        "director": "제임스 카메론",
+        "genre": "SF/액션",
+        "release_date": "1991-07-06",
+        "poster_url": "https://i.namu.wiki/i/dlJo2u9MCkUDtZqB2g0cbOz2QrohvV8v-r6d_IsNltd4SyNJ_SFPSE3MpwYf12omz_f1QNqa_IcQmoNYD3LStkbF0-iYekdK_f4jitqP5M6nSy1Wztc_Z4cl4DQ2AURr6f8Os-ATkx3q043IMXuQ5Q.webp"
+    },
+    {
+        "id": 18,
+        "title": "트루 라이즈 (True Lies)",
+        "director": "제임스 카메론",
+        "genre": "액션/코미디",
+        "release_date": "1994-08-13",
+        "poster_url": "https://i.namu.wiki/i/U9Lwe1I68pqymmEqPpEbBPoKcuIfXSbeFqYvRq_mv6vnNoJKqEbULKss1TyR3pPkyb0rPDpkJS6N1ICzZbfScnxdk4aksG3qHieiccZqiMQWq0kPpitmIfBZNOJaPOgJh5-NUh7QIyZx6G9gtrEsPQ.webp"
+    },
+    {
+        "id": 19,
+        "title": "타이타닉 (Titanic)",
+        "director": "제임스 카메론",
+        "genre": "로맨스/드라마",
+        "release_date": "1998-02-20",
+        "poster_url": "https://i.namu.wiki/i/0m20IinZ46smWKKFpbLHp_YgraALRbpgLWOVVR3eXppBN6KzEUd0qqiEORA9SztBK5oAjpMwQgoHU1X4Vx5r4ktxWhQeMc-c-CPTZR4Lt8GSeHVJ53M1blu6VuhEeIkPKl4jqafpeopevZbV6x9LoQ.webp"
+    },
+    {
+        "id": 20,
+        "title": "글래디에이터 (Gladiator)",
+        "director": "리들리 스콧",
+        "genre": "액션/드라마",
+        "release_date": "2000-05-14",
+        "poster_url": "https://i.namu.wiki/i/NfMIAyWpum09xwA2b3Dom5h9xdfUyDSLceReiML3deWkQzjszAP1cBbtR6isDNet2DRdsy0qXhRFenNSP6rOkpHGaOsOMSzg4OM1m78t63F_iAjfNKvxA2kujd30BLVBN1bjoHVdNhBVpH8kMIUpVg.webp"
+    },
+    {
+        "id": 21,
+        "title": "아바타 (Avatar)",
+        "director": "제임스 카메론",
+        "genre": "SF/어드벤처",
+        "release_date": "2009-12-17",
+        "poster_url": "https://i.namu.wiki/i/S8leCXbH-7K5tBRloeU5CMwpkOgoKZaIyMLxPG0KJve9lsBsRajwxwWu5jujZeyw2SVmMwfpfad6E4atSvJuLUAtipC1woIIh6gnoMcDt3C3pxyqGNtkTj0whSBjkBnXoQzi1p-ufOGNmLzP9IKO2Q.webp"
+    },
+    {
+        "id": 22,
+        "title": "마션 (The Martian)",
+        "director": "리들리 스콧",
+        "genre": "SF/드라마",
+        "release_date": "2015-10-08",
+        "poster_url": "https://i.namu.wiki/i/iNpSLNQYv2fG17eKaArSmay7FuFvsVPgwa9N_u1XOjusCQblFTv2gM2jkbqFXeDPDgA1pZV3N0ysc9SDPuMMWiao80Z-G-YW7B_QVbNhH7yeUz1mptYd5DX77ggNqNtbgLa_b9lMv7WzDkkTBgH1FA.webp"
+    },
+    {
+        "id": 23,
+        "title": "아바타: 물의 길 (Avatar 2)",
+        "director": "제임스 카메론",
+        "genre": "SF/어드벤처",
+        "release_date": "2022-12-14",
+        "poster_url": "https://i.namu.wiki/i/1IVlETEzLEpvkwIQOV2C1398a03vneKQAEJM9dNPlKmadh6afFh5lbFbN_C7_w5TVZIKocaPS2p1rnAQmWO9zxLuQ0OYbuLHhlomlcTRWAOyukodoGCCi2UUeGaEl5xzokMtH7mTsTe8WZSUn3renw.webp"
+    },
+    {
+        "id": 24,
+        "title": "나폴레옹 (Napoleon)",
+        "director": "리들리 스콧",
+        "genre": "전쟁/드라마",
+        "release_date": "2023-12-06",
+        "poster_url": "https://i.namu.wiki/i/fFMAL4gtyR26lYItDOvuRPUYqbaAn6mHyg8XTL9DkToUS7u7TC1briCgwYN09rFrv5UW1XMoZuFCC1SQ1r7_1uHSBF_4qg55QcxAaxXYG6vahVzJGejYY5cScTTiV_PnV75qSWtxYbgC7mNioOWvrw.webp"
+    },
+    {
+        "id": 25,
+        "title": "글래디에이터 II (Gladiator 2)",
+        "director": "리들리 스콧",
+        "genre": "액션/드라마",
+        "release_date": "2024-11-13",
+        "poster_url": "https://i.namu.wiki/i/wSETKp88-IkPRaCc_6rYh_OS5WO7h0FIDr0b9XeZSVWNASme-foq_lpkA4mH_qZWNq6v6vr4N_bRi2tAklQhDaiglrQAqStaGAItLn2juZmOhC2Rv7En53OqsGWgTdduHLWn-Y-yr2v4yWf_sSjkTw.webp"
+    },
+    {
+        "id": 26,
+        "title": "아바타: 불과 재 (Avatar 3)",
+        "director": "제임스 카메론",
+        "genre": "SF/어드벤처",
+        "release_date": "2025-12-19",
+        "poster_url": "https://i.namu.wiki/i/DMmiKP9klGB1d-a2cUDBhw-M3VRsvTtgfkkR-RUsl0QiDIpXBOOpPW-ExwcKrGD_snOBix4IKggWZkwAs_VuBs-Afv7MiaBtMNC9zKTYPjvtDEt4dxDYJnEgHkvFABYflJ78J_dR0PUawVjkqxwEtA.webp"
+    },
+    {
+        "title": "델마와 루이스",
+        "director": "리들리 스콧",
+        "genre": "드라마, 모험, 범죄",
+        "release_date": "1991-05-24",
+        "poster_url": "https://i.namu.wiki/i/JiLzbetJ3H_RqiLvVGd__wM4_Y4IXO8f4tYkDb-SkuzTWmAj8vHDubTC4zU5I3yc_4nR4m8LAqwf6XjA9-kbcLQ3WKVdIebMTowbRYZvpPg7yJXAzPgYoiS7mguwJT0EX-aZKh4EMhz8rpM57nDrUw.webp",
+        "id": 27
+    }
 ]

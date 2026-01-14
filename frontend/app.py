@@ -1,6 +1,7 @@
 import streamlit as st
 import requests
 import pandas as pd
+import datetime  # 날짜 설정을 위해 상단에 추가 필요
 
 # FastAPI 서버 주소 (로컬 실행 시 기본값)
 # 배포 시에는 실제 백엔드 URL로 변경해야 합니다.
@@ -23,7 +24,13 @@ with st.sidebar:
         title = st.text_input("영화 제목")
         director = st.text_input("감독")
         genre = st.text_input("장르")
-        release_date = st.date_input("개봉일")
+        ##release_date = st.date_input("개봉일")
+        release_date = st.date_input(
+            "개봉일",
+            value=datetime.date(2000, 1, 1),  # 기본 표시 날짜
+            min_value=datetime.date(1900, 1, 1),  # 최소 선택 가능 날짜 (1900년까지 확대)
+            max_value=datetime.date(2100, 1, 1)  # 최대 선택 가능 날짜
+        )
         poster_url = st.text_input("포스터 이미지 URL")
         submit_movie = st.form_submit_button("영화 등록")
 
