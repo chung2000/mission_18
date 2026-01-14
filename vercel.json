@@ -5,7 +5,7 @@
       "use": "@vercel/python"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
       "source": "/(.*)",
       "destination": "backend/main.py"
