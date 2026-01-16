@@ -35,7 +35,7 @@ def save_json(file_path, data):
     with open(file_path, "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
 
-
+# --- 2. 임시 데이터 저장소 (DB 대신 리스트 사용) ---
 # --- 3. 초기 데이터 로드 ---
 print("Initializing Data...")
 movies = load_json(MOVIES_FILE)

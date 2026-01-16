@@ -170,6 +170,7 @@ else:
             all_reviews = res.json()
             if all_reviews:
                 df = pd.DataFrame(all_reviews)
+            	# 보기 좋게 열 이름 변경
                 df = df[['movie_title', 'content', 'sentiment', 'sentiment_score', 'created_at']]
                 st.dataframe(df, use_container_width=True)  # 테이블 대신 데이터프레임으로 길게 표시
             else:
