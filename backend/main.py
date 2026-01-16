@@ -72,7 +72,7 @@ class ReviewCreate(BaseModel):
 # --- 6. API 엔드포인트 구현 ---
 @app.get("/")
 def root():
-    return {"message": "Hello World"}
+    return {"message": "Movie Review AI API is running"}
 
 @app.get("/api/hello")
 def read_root():
@@ -150,10 +150,25 @@ def create_review(review: ReviewCreate):
     return new_review
 
 
+@app.get("/reviews/")
+def get_all_reviews(movie_id: Optional[int] = None):
+    """
+    모든 리뷰를 최신순으로 가져옵니다.
+    movie_id가 쿼리 파라미터로 들어오면 해당 영화의 리뷰만 필터링합니다.
+    """
+    # 전체 리뷰를 최신순으로 정렬
+    sorted_reviews = reviews[::-1]
+
+    if movie_id is not None:
+        return [r for r in sorted_reviews if r["movie_id"] == movie_id]
+
+    return sorted_reviews
+
+
 @app.get("/reviews/recent")
-def get_recent_reviews():
-    # 최신순으로 10개 반환
-    return reviews[::-1][:10]
+def get_recent_reviews(limit: int = 10):
+    """최신 리뷰를 지정된 개수만큼 가져옵니다. (기본 10개)"""
+    return reviews[::-1][:limit]
 
 # (기타 삭제 등의 API도 동일하게 save_json을 호출하도록 구성)
 # [리뷰 삭제 API]
@@ -170,6 +185,8 @@ def delete_all_reviews():
 def delete_specific_review(index: int):
     global reviews
     try:
+        # 최신순 정렬 상태에서의 인덱스일 경우를 대비해 로직 확인 필요
+        # 여기서는 원본 리스트의 인덱스를 기준으로 삭제합니다.
         reviews.pop(index)
         save_json(REVIEWS_FILE, reviews)
         return {"message": "Review deleted"}

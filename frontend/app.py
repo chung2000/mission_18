@@ -70,16 +70,24 @@ if clicked_movie_id:
             st.write(f"**장르**: {movie['genre']} | **개봉일**: {movie['release_date']}")
             st.markdown("---")
 
-            # 리뷰 필터링 및 분석 결과 표시
-            rev_res = requests.get(f"{BACKEND_URL}/reviews/recent")
+            # --- [수정 부분] 특정 영화의 전체 리뷰를 가져와서 지수 계산 ---
+            # /reviews/?movie_id=X 엔드포인트 호출
+            rev_res = requests.get(f"{BACKEND_URL}/reviews/", params={"movie_id": m_id})
+
             if rev_res.status_code == 200:
-                m_reviews = [r for r in rev_res.json() if r['movie_id'] == m_id]
+                m_reviews = rev_res.json()  # 해당 영화의 모든 리뷰
                 if m_reviews:
+                    total_count = len(m_reviews)
                     pos_count = sum(1 for r in m_reviews if r['sentiment'] == "POSITIVE")
-                    st.metric("AI 긍정 지수", f"{(pos_count / len(m_reviews)) * 100:.1f}%", f"{len(m_reviews)}개의 리뷰")
+
+                    # AI 긍정 지수 메트릭 표시
+                    st.metric("AI 긍정 지수", f"{(pos_count / total_count) * 100:.1f}%", f"총 {total_count}개의 리뷰 분석됨")
+
+                    # 리뷰 리스트 출력
                     for r in m_reviews:
-                        with st.chat_message("user"):
-                            st.write(f"{'😊' if r['sentiment'] == 'POSITIVE' else '🤔'} {r['content']}")
+                        with st.chat_message("user", avatar="😊" if r['sentiment'] == 'POSITIVE' else "🤔"):
+                            st.write(r['content'])
+                            st.caption(f"{r['created_at']} | AI 분석: {r['sentiment']} (신뢰도: {r['sentiment_score']:.2f})")
                 else:
                     st.info("아직 리뷰가 없습니다.")
 
@@ -103,7 +111,7 @@ else:
                         # 클릭 시 URL에 ?movie_id=X 가 붙게 됩니다.
                         html_code = f"""
                         <a href="/?movie_id={movie['id']}" target="_self" style="text-decoration: none;">
-                            <img src="{movie['poster_url']}" style="width: 100%; border-radius: 10px; transition: 0.3s; cursor: pointer;">
+                            <img src="{movie['poster_url']}" style="width: 100%; height: 350px; object-fit: cover; border-radius: 10px; transition: 0.3s; cursor: pointer;">
                             <p style="color: white; text-align: center; font-weight: bold; margin-top: 5px;">{movie['title']}</p>
                         </a>
                         """
@@ -155,14 +163,14 @@ else:
 
     # 3. 리뷰 히스토리 탭
     with tabs[2]:
-        st.subheader("최근 리뷰 히스토리")
-        res = requests.get(f"{BACKEND_URL}/reviews/recent")
+        st.subheader("전체 리뷰 히스토리")
+        # --- [수정 부분] 10개 제한 없이 전체 리뷰를 가져오도록 변경 ---
+        res = requests.get(f"{BACKEND_URL}/reviews/")
         if res.status_code == 200:
-            recent_reviews = res.json()
-            if recent_reviews:
-                df = pd.DataFrame(recent_reviews)
-                # 보기 좋게 열 이름 변경
-                df = df[['movie_title', 'content', 'sentiment', 'created_at']]
-                st.table(df)
+            all_reviews = res.json()
+            if all_reviews:
+                df = pd.DataFrame(all_reviews)
+                df = df[['movie_title', 'content', 'sentiment', 'sentiment_score', 'created_at']]
+                st.dataframe(df, use_container_width=True)  # 테이블 대신 데이터프레임으로 길게 표시
             else:
                 st.write("아직 작성된 리뷰가 없습니다.")
